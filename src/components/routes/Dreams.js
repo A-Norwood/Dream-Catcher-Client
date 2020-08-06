@@ -53,13 +53,13 @@ const Dreams = (props) => {
   return (
     <div className="dream-style">
       <h4>My Dream Log</h4>
-      <div className="center">
+      <div>
         <div className="dream-display">
           {dreamsJsx}
         </div>
       </div>
       <Link to={'/create-dream'}>
-        <button className="button btn btn-success" >Log New Dream</button>
+        <button className="button btn btn-primary" >Log New Dream</button>
       </Link>
     </div>
   )

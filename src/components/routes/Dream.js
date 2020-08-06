@@ -82,7 +82,7 @@ const Dream = (props) => {
     // shows the specified fields(all details of the dream) when a dream is clicked
     <div>
       <h4>{dream.title}</h4>
-      <p className="border border-dark rounded-top">
+      <p className="dream-border">
         <br /> <span className="dream-info">Date:</span> {dream.date}
         <br /> <span className="dream-info">Sleep Location:</span> {dream.location}
         <br /> <span className="dream-info">Time I fell asleep:</span> {dream.sleep_time}
@@ -92,13 +92,15 @@ const Dream = (props) => {
         <br /> <span className="dream-info">Dream Meaning:</span> {dream.meaning}
       </p>
       {/*  button to click to delete a dream */}
-      <button onClick={destroy}>Delete Dream</button>
+      <button className="btn btn-outline-danger" onClick={destroy}>Delete Dream</button>
       {/*  // Link to take user to the edit page once the Edit Dream button is clicked */}
       <Link to={`/dreams/${props.match.params.id}/edit`}>
-        <button>Edit Dream</button>
+        <button className="btn btn-outline-primary">Edit Dream</button>
       </Link>
-      {/* Link to take user back to all dreams list */}
-      <Link to='/dreams'>Back to all dreams</Link>
+      <div>
+        {/* Link to take user back to all dreams list */}
+        <Link to='/dreams'>Back to all dreams</Link>
+      </div>
     </div>
   )
 }
