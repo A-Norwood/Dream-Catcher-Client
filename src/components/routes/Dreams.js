@@ -38,16 +38,18 @@ const Dreams = (props) => {
   }, [])
 
   const dreamsJsx = dreams.map(dream => (
-    <ul key={dream._id}>
-      <li>
-        <Link to={`/dreams/${dream._id}`}>{dream.title}</Link>
-      </li>
-    </ul>
+    <div className="list-group" key={dream._id}>
+      <ul>
+        <li className="list-group-item list-group-item-action">
+          <Link to={`/dreams/${dream._id}`}>{dream.title}</Link>
+        </li>
+      </ul>
+    </div>
   ))
 
   return (
     <div className="dream-style">
-      <h4>My Dreams</h4>
+      <h4>My Dream Log</h4>
       <div className="center">
         <div className="dream-display">
           {dreamsJsx}
