@@ -19,10 +19,7 @@ const Dreams = (props) => {
         'Authorization': `Token token=${props.user.token}`
       }
     }, [])
-      .then(res => {
-        console.log(res)
-        return res
-      })
+
       .then(res => setDreams(res.data.dreams))
 
       .then(() => msgAlert({
@@ -47,7 +44,7 @@ const Dreams = (props) => {
       </li>
     </ul>
   ))
-  console.log(dreamsJsx)
+
   return (
     <div className="dream-style">
       <h4>My Dreams</h4>
@@ -57,7 +54,7 @@ const Dreams = (props) => {
         </div>
       </div>
       <Link to={'/create-dream'}>
-        <button className="button btn btn-success" >Create Dream</button>
+        <button className="button btn btn-success" >Log New Dream</button>
       </Link>
     </div>
   )
