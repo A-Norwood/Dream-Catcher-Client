@@ -9,6 +9,9 @@ import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
 import DreamCreate from './../routes/DreamCreate'
+import Dreams from './../routes/Dreams'
+import Dream from './../routes/Dream'
+import DreamEdit from './../routes/DreamEdit'
 
 class App extends Component {
   constructor () {
@@ -57,6 +60,15 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/create-dream' render={() => (
             <DreamCreate msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/dreams' render={(props) => (
+            <Dreams {...props} msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/dreams/:id' render={(props) => (
+            <Dream {...props} msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} exact path='/dreams/:id/edit' render={(props) => (
+            <DreamEdit {...props} msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>
