@@ -82,14 +82,14 @@ const Dream = (props) => {
     // shows the specified fields(all details of the dream) when a dream is clicked
     <div>
       <h4>{dream.title}</h4>
-      <p>
-        <br /> Date: {dream.date}
-        <br /> Sleep Location: {dream.location}
-        <br /> Time I fell asleep: {dream.sleep_time}
-        <br /> Time I woke up: {dream.wake_time}
-        <br /> Dream description: {dream.description}
-        <br /> Sleep Quality: {dream.quality}
-        <br /> Dream Meaning: {dream.meaning}
+      <p className="border border-dark rounded-top">
+        <br /> <span className="dream-info">Date:</span> {dream.date}
+        <br /> <span className="dream-info">Sleep Location:</span> {dream.location}
+        <br /> <span className="dream-info">Time I fell asleep:</span> {dream.sleep_time}
+        <br /> <span className="dream-info">Time I woke up:</span> {dream.wake_time}
+        <br /> <span className="dream-info">Dream description:</span> {dream.description}
+        <br /> <span className="dream-info">Sleep Quality:</span> {dream.quality}
+        <br /> <span className="dream-info">Dream Meaning:</span> {dream.meaning}
       </p>
       {/*  button to click to delete a dream */}
       <button onClick={destroy}>Delete Dream</button>
