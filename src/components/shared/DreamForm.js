@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom'
 
 const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
   <form onSubmit={handleSubmit}>
-    <div>
+    <div className="form-group">
       <label>Dream Date</label>
       <input
+        className="form-control"
         placeholder="Example: 2020-02-16"
         value={dream.date}
         name="date"
@@ -15,6 +16,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div>
       <label>Title</label>
       <input
+        className="form-control"
         placeholder="Example: Teeth Fell Out Again"
         value={dream.title}
         name="title"
@@ -24,6 +26,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div>
       <label>Dream Location</label>
       <input
+        className="form-control"
         placeholder="Example: Home"
         value={dream.location}
         name="location"
@@ -33,6 +36,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div>
       <label>Sleep Time</label>
       <input
+        className="form-control"
         placeholder="Example: 10:30pm"
         value={dream.sleep_time}
         name="sleep_time"
@@ -42,6 +46,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div>
       <label>Wake Time</label>
       <input
+        className="form-control"
         placeholder="Example: 7:30am"
         value={dream.wake_time}
         name="wake_time"
@@ -51,6 +56,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div>
       <label>Dream Description</label>
       <input
+        className="form-control"
         placeholder="Example: My teeth fell out"
         value={dream.description}
         name="description"
@@ -60,6 +66,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div>
       <label>Sleep Quality</label>
       <input
+        className="form-control"
         placeholder="Example: Fair"
         value={dream.quality}
         name="quality"
@@ -69,6 +76,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div>
       <label>Dream Meaning</label>
       <input
+        className="form-control"
         placeholder="(Optional)Example: Losing Control"
         value={dream.meaning}
         name="meaning"
