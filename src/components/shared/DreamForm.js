@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+// form with all fields that a dream requires to fill out with examples.
 const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
   <form onSubmit={handleSubmit}>
     <div className="form-group">
@@ -84,8 +85,10 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
       />
     </div>
     <br />
+    {/* A submit button for user to click once fields filled */}
     <button type="submit" className="btn btn-primary">Submit</button>
     <Link to={cancelPath}>
+      {/* Cancel button if user decides to cancel actions, takes them back to path specified */}
       <button className="btn btn-danger">Cancel</button>
     </Link>
   </form>

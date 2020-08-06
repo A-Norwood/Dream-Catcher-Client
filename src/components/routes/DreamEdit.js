@@ -6,6 +6,7 @@ import DreamForm from '../shared/DreamForm'
 import messages from './../AutoDismissAlert/messages'
 
 const DreamEdit = props => {
+  // dreamEdit takes props as pararms, state starts as empty string
   const [dream, setDream] = useState({
     date: '',
     title: '',
@@ -16,9 +17,11 @@ const DreamEdit = props => {
     quality: '',
     meaning: ''
   })
+  // updated starts are false, to be changed when edit is complete
   const [updated, setUpdated] = useState(false)
   const { msgAlert } = props
   //  functions like a componentDidMount
+  // GET request to get the current information from selected dream
   useEffect(() => {
     axios({
       url: `${apiUrl}/dreams/${props.match.params.id}`,
@@ -27,6 +30,7 @@ const DreamEdit = props => {
         'Authorization': `Token token=${props.user.token}`
       }
     })
+    // response gets the information from specified dream that user wants to update
       .then(res => setDream(res.data.dream))
       .catch(console.error)
   }, [])
@@ -38,6 +42,7 @@ const DreamEdit = props => {
       return editedDream
     })
   }
+  // PATCH request to send to API to actually update dream information
   const handleSubmit = event => {
     event.preventDefault()
     axios({
@@ -48,8 +53,10 @@ const DreamEdit = props => {
       },
       data: { dream }
     })
+    // changes the setUpdated state from false(default) to true
       .then(() => setUpdated(true))
       // .catch(console.error)
+      // success message if dream updated
       .then(() => msgAlert({
         heading: 'Edited Dream',
         message: messages.editDreamSuccess,
@@ -64,6 +71,7 @@ const DreamEdit = props => {
         })
       })
   }
+  // if dream was updated, redirect user to that dream
   if (updated) {
     return <Redirect to={`/dreams/${props.match.params.id}`} />
   }
