@@ -15,7 +15,7 @@
 
 
 ## User Stories
-1.I am a user and I want to Sign In.
+1.I am a user and I want to Sign In and view my dream log only once I'm signed in.
 2. I am a user and I want to Sign out.
 3. I am a user and I want to change password.
 4. I am a user and I want to log a new dream.
@@ -24,6 +24,7 @@
 7. I am a user and I want to find the meaning of my dream. (possibly)
 
 ## Technologies Used
+- React
 - JavaScript
 - Bootstrap
 - CSS

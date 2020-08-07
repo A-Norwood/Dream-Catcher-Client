@@ -27,6 +27,7 @@ const unauthenticatedOptions = (
 const Header = ({ user }) => (
   <Navbar bg="dark" variant="dark" expand="md">
     <Navbar.Brand href="#">
+      <img src="https://i.imgur.com/zCxN3wg.png" style={{ height: '10%', width: '10%' }} />
       Dream Catcher
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
