@@ -64,15 +64,13 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div className="form-group">
-      <label>Sleep Quality</label>
-      <input
-        className="form-control"
-        placeholder="Example: Fair"
-        value={dream.quality}
-        name="quality"
-        onChange={handleChange}
-      />
+    <div className="form-group" value={dream.quality}>
+      <label htmlFor="sel1" >Select: Sleep Quality</label>
+      <select onChange={handleChange} name="quality" className="form-control" id="sel1">
+        <option>Great</option>
+        <option>Fair</option>
+        <option>Poor</option>
+      </select>
     </div>
     <div className="form-group">
       <label>Dream Meaning</label>

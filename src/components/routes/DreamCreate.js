@@ -14,6 +14,8 @@ const DreamCreate = (props) => {
   // uses handle change and passes in the event as param to handle the action
   const handleChange = event => {
     const updatedField = { [event.target.name]: event.target.value }
+    console.log('event.target: ', event.target)
+    console.log('updated field: ', updatedField)
     //  sets the newly created dream to an object
     const editedDream = Object.assign({}, dream, updatedField)
     setDream(editedDream)
