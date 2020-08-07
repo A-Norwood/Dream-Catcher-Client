@@ -7,8 +7,8 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <div className="form-group">
       <label>Dream Date</label>
       <input
+        type="date"
         className="form-control"
-        placeholder="Example: 2020-02-16"
         value={dream.date}
         name="date"
         onChange={handleChange}
