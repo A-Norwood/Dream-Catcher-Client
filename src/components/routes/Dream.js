@@ -92,14 +92,14 @@ const Dream = (props) => {
         <br /> <span className="dream-info">Dream Meaning:</span> {dream.meaning}
       </p>
       {/*  button to click to delete a dream */}
-      <button className="btn btn-outline-danger" onClick={destroy}>Delete Dream</button>
+      <button className="btn btn-danger" onClick={destroy}>Delete Dream</button>
       {/*  // Link to take user to the edit page once the Edit Dream button is clicked */}
       <Link to={`/dreams/${props.match.params.id}/edit`}>
-        <button className="btn btn-outline-primary">Edit Dream</button>
+        <button className="btn btn-info">Edit Dream</button>
       </Link>
       <div>
         {/* Link to take user back to all dreams list */}
-        <Link to='/dreams'>Back to all dreams</Link>
+        <Link className="back" to='/dreams'>Back to all dreams</Link>
       </div>
     </div>
   )

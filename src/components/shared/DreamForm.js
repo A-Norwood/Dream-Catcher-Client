@@ -14,7 +14,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div>
+    <div className="form-group">
       <label>Title</label>
       <input
         className="form-control"
@@ -24,7 +24,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div>
+    <div className="form-group">
       <label>Dream Location</label>
       <input
         className="form-control"
@@ -34,7 +34,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div>
+    <div className="form-group">
       <label>Sleep Time</label>
       <input
         className="form-control"
@@ -44,7 +44,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div>
+    <div className="form-group">
       <label>Wake Time</label>
       <input
         className="form-control"
@@ -54,7 +54,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div>
+    <div className="form-group">
       <label>Dream Description</label>
       <input
         className="form-control"
@@ -64,7 +64,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div>
+    <div className="form-group">
       <label>Sleep Quality</label>
       <input
         className="form-control"
@@ -74,7 +74,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
         onChange={handleChange}
       />
     </div>
-    <div>
+    <div className="form-group">
       <label>Dream Meaning</label>
       <input
         className="form-control"
