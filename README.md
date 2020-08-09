@@ -5,11 +5,11 @@
 ## Links
 - [Link to deployed site]()
 - [Back End API Repository](https://github.com/A-Norwood/Dream-Catcher-Server)
-- [Backend API URL]()
+- [Backend API URL](https://github.com/A-Norwood/Dream-Catcher-Server)
 
 
 ## Planning/Coding Experience
-
+I began planning the front end of the Dream Catcher application by writing user stories and wireframes. I wrote down steps to acheive each of the user stories. I started each day with a goal for the day, and made sure to overcome anything that was blocking me from making progress. I began by testing the auth that was given the template to verify it worked and figure out where I need to start. I started with creating each CRUD action for the user's dreams. I made sure to include ownership for each CRUD action. I then moved onto organization and styling. I finished by deploying the site to Heroku and testing the deployed version as well.
 
 ## Unsolved Problems
 
