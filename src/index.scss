@@ -5,6 +5,17 @@
   font-weight: bold;
   text-decoration: underline;
   margin: 8px;
+  font-size: 30px;
+  color: #004d4d;
+}
+
+.jsx {
+  font-size: 30px;
+  color: #00b3b3;
+}
+
+.back {
+  font-size: 45px;
 }
 
 p {
@@ -15,8 +26,9 @@ p {
 h4 {
   text-align: center;
   margin: 15px;
-  font-size: 30px;
+  font-size: 40px;
   text-decoration: underline;
+  color: #20B2AA;
 }
 
 .container {
@@ -60,4 +72,10 @@ label {
 .link {
   margin: 15px 0;
   font-size: 25px;
+}
+
+.list-group {
+  font-size: 30px;
+}
+.dream-display {
 }

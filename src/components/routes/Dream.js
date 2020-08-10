@@ -83,19 +83,19 @@ const Dream = (props) => {
     <div>
       <h4>{dream.title}</h4>
       <p className="dream-border">
-        <br /> <span className="dream-info">Date:</span> {dream.date}
-        <br /> <span className="dream-info">Sleep Location:</span> {dream.location}
-        <br /> <span className="dream-info">Time I fell asleep:</span> {dream.sleep_time}
-        <br /> <span className="dream-info">Time I woke up:</span> {dream.wake_time}
-        <br /> <span className="dream-info">Dream description:</span> {dream.description}
-        <br /> <span className="dream-info">Sleep Quality:</span> {dream.quality}
-        <br /> <span className="dream-info">Dream Meaning:</span> {dream.meaning}
+        <br /> <span className="dream-info">Date:</span><span className='jsx'>{dream.date}</span>
+        <br /> <span className="dream-info">Sleep Location:</span><span className='jsx'> {dream.location}</span>
+        <br /> <span className="dream-info">Time I fell asleep:</span> <span className='jsx'>{dream.sleep_time}</span>
+        <br /> <span className="dream-info">Time I woke up:</span> <span className='jsx'>{dream.wake_time}</span>
+        <br /> <span className="dream-info">Dream description:</span> <span className='jsx'>{dream.description}</span>
+        <br /> <span className="dream-info">Sleep Quality:</span> <span className='jsx'>{dream.quality}</span>
+        <br /> <span className="dream-info">Dream Meaning:</span><span className='jsx'> {dream.meaning}</span>
       </p>
       {/*  button to click to delete a dream */}
-      <button className="btn btn-danger" onClick={destroy}>Delete Dream</button>
+      <button className="btn btn-danger btn-lg" onClick={destroy}>Delete Dream</button>
       {/*  // Link to take user to the edit page once the Edit Dream button is clicked */}
       <Link to={`/dreams/${props.match.params.id}/edit`}>
-        <button className="btn btn-info">Edit Dream</button>
+        <button className="btn btn-info btn-lg">Edit Dream</button>
       </Link>
       <div>
         {/* Link to take user back to all dreams list */}

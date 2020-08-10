@@ -42,7 +42,7 @@ const Dreams = (props) => {
   const dreamsJsx = dreams.map(dream => (
     <div className="list-group" key={dream._id}>
       <ul>
-        <li className="list-group-item list-group-item-action">
+        <li className="list-group-item list-group-item-info">
           <Link to={`/dreams/${dream._id}`}>{dream.title}</Link>
         </li>
       </ul>
@@ -59,7 +59,7 @@ const Dreams = (props) => {
         </div>
       </div>
       <Link to={'/create-dream'}>
-        <button className="button btn btn-primary" >Log New Dream</button>
+        <button className="button btn btn-primary btn-lg" >Log New Dream</button>
       </Link>
     </div>
   )
