@@ -84,6 +84,9 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     </div>
     <br />
     {/* A submit button for user to click once fields filled */}
+    <div className="link">
+      <a href="https://journeyintodreams.com/dream-dictionary/" target="blank">Click here to find your dream meaning!</a>
+    </div>
     <button type="submit" className="btn btn-primary">Submit</button>
     <Link to={cancelPath}>
       {/* Cancel button if user decides to cancel actions, takes them back to path specified */}

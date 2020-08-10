@@ -6,6 +6,7 @@ const authenticatedOptions = (
   <Fragment>
     <Nav.Link href="#create-dream">Log New Dream</Nav.Link>
     <Nav.Link href="#dreams">Show My Dreams</Nav.Link>
+    <Nav.Link href="#dreams-other">Other Dreamers</Nav.Link>
     <Nav.Link href="#change-password">Change Password</Nav.Link>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
   </Fragment>
@@ -27,7 +28,7 @@ const unauthenticatedOptions = (
 const Header = ({ user }) => (
   <Navbar bg="dark" variant="dark" expand="md">
     <Navbar.Brand href="#">
-      <img src="https://i.imgur.com/zCxN3wg.png" style={{ height: '10%', width: '10%' }} />
+      <img src="https://i.imgur.com/zCxN3wg.png" style={{ height: '6%', width: '6%' }} />
       Dream Catcher
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
