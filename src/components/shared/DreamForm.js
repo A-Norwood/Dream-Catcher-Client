@@ -88,6 +88,7 @@ const DreamForm = ({ dream, handleSubmit, handleChange, cancelPath }) => (
     <Link to={cancelPath}>
       {/* Cancel button if user decides to cancel actions, takes them back to path specified */}
       <button className="btn btn-danger">Cancel</button>
+
     </Link>
   </form>
 )
