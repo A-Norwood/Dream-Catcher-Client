@@ -13,6 +13,7 @@ import DreamCreate from './../routes/DreamCreate'
 import Dreams from './../routes/Dreams'
 import Dream from './../routes/Dream'
 import DreamEdit from './../routes/DreamEdit'
+import DreamOther from './../routes/DreamOther'
 
 class App extends Component {
   constructor () {
@@ -62,6 +63,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} exact path='/dreams/:id/edit' render={(props) => (
             <DreamEdit {...props} msgAlert={this.msgAlert} user={user} />
+          )} />
+          <Route user={user} exact path='/dreams-other' render={(props) => (
+            <DreamOther {...props} user={user} />
           )} />
         </main>
         {msgAlerts.map((msgAlert, index) => (
