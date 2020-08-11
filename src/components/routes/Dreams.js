@@ -42,7 +42,7 @@ const Dreams = (props) => {
   const dreamsJsx = dreams.map(dream => (
     <div className="list-group" key={dream._id}>
       <ul>
-        <li className="list-group-item list-group-item-info">
+        <li className="list-group-item list-group-item-secondary">
           <Link to={`/dreams/${dream._id}`}>{dream.title}</Link>
         </li>
       </ul>

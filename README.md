@@ -15,20 +15,22 @@ I began planning the front end of the Dream Catcher application by writing user 
 
 
 ## User Stories
-1.I am a user and I want to Sign In and view my dream log only once I'm signed in.
-2. I am a user and I want to Sign out.
+1.I am a user and I want to sign in and view my dream log only once I'm signed in.
+2. I am a user and I want to sign out.
 3. I am a user and I want to change password.
 4. I am a user and I want to log a new dream.
 5. I am a user and I want to edit a currently logged dream.
 6. I am a user and I want to delete a currently logged dream.
-7. I am a user and I want to find the meaning of my dream. (possibly)
+7. I am a user and I want to find the meaning of my dream.
+8. I am not a logged in user, but I want to view other's dream log.
 
 ## Technologies Used
-- React
+- React Hooks
 - JavaScript
-- Bootstrap
+- React Bootstrap
 - CSS
 - HTML
+- Axios
 - Keynote
 
 ## Images

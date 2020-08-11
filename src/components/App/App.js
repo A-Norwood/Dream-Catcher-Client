@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import AuthenticatedRoute from '../AuthenticatedRoute/AuthenticatedRoute'
 import AutoDismissAlert from '../AutoDismissAlert/AutoDismissAlert'
 import Header from '../Header/Header'
-import Footer from './../shared/Footer'
+// import Footer from './../shared/Footer'
 import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
@@ -64,7 +64,7 @@ class App extends Component {
           <AuthenticatedRoute user={user} exact path='/dreams/:id/edit' render={(props) => (
             <DreamEdit {...props} msgAlert={this.msgAlert} user={user} />
           )} />
-          <Route user={user} exact path='/dreams-other' render={(props) => (
+          <AuthenticatedRoute user={user} exact path='/dreams-other' render={(props) => (
             <DreamOther {...props} user={user} />
           )} />
         </main>
@@ -76,7 +76,7 @@ class App extends Component {
             message={msgAlert.message}
           />
         ))}
-        <Footer />
+        {/* <Footer /> */}
       </Fragment>
     )
   }

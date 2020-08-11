@@ -20,7 +20,6 @@ const DreamOther = (props) => {
     }, [])
       // sets the response
       .then(res => {
-        console.log('received dream data is', res)
         return setOtherDreams(res.data.dreams)
       })
       // .then(res => setOtherDreams(res.data.otherDreams))
@@ -30,7 +29,7 @@ const DreamOther = (props) => {
   const dreamsJsx = otherDreams.map(dream => (
     <div className="list-group" key={dream._id}>
       <ul>
-        <li className="list-group-item list-group-item-action">
+        <li className="list-group-item list-group-item-info">
           <Link to={`/dreams/${dream._id}`}>{dream.title}</Link>
         </li>
       </ul>
@@ -40,7 +39,7 @@ const DreamOther = (props) => {
   // button to Log a New dream will take user to create dream page.
   return (
     <div className="dream-style">
-      <h4>Other Dreams</h4>
+      <h4>Other Dreamers</h4>
       <div>
         <div className="dream-display">
           {dreamsJsx}

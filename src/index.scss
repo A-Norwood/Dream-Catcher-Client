@@ -60,14 +60,30 @@ label {
   font-size: 20px;
 }
 
-.footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-}
+// .footer {
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   height: 2.5rem;
+//   display: flex;
+//   justify-content: center;
+// }
+
+// #page-container {
+//   position: relative;
+//   min-height: 100vh;
+// }
+//
+// #content-wrap {
+//   padding-bottom: 2.5rem;
+// }
+//
+// #footer {
+//   position: absolute;
+//   bottom: 0;
+//   width: 100%;
+//   height: 2.5rem;
+// }
 
 .link {
   margin: 15px 0;
@@ -76,6 +92,4 @@ label {
 
 .list-group {
   font-size: 30px;
-}
-.dream-display {
 }

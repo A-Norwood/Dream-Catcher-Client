@@ -1,7 +1,7 @@
 import React from 'react'
 
 // import Nav from './Nav'
-import Footer from './Footer'
+// import Footer from './Footer'
 
 // import Header from './../Header/Header'
 
@@ -10,7 +10,7 @@ const Layout = props => (
 
     {props.children}
 
-    <Footer />
+    {/* <Footer /> */}
   </div>
 )
 
